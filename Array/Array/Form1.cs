@@ -41,11 +41,28 @@ namespace Array
 
             //Função para gerar números aleatórios dos números e naipes
             //Criando duas variáveis que vão receber números aleatórios
-            string n = naipe[numero.Next(3)];
-            string f = face[numero.Next(12)];
+            string n = naipe[numero.Next(4)];
+            string f = face[numero.Next(13)];
 
             //Criando o Array aleatório de Números e Naipes de cartas
             MessageBox.Show( f + " de " + n);
+        }
+
+        private void btnArray2_Click(object sender, EventArgs e)
+        {
+            //Outra forma de declarar e iniciar um Array 
+            //Neste caso o Array SEMPRE tem um tamanho fixo
+            
+            //"Criando um objeto Array do tipo inteiro de tamanho 5"
+
+            int[] numeros = new int[5];
+            numeros[0] = 1;
+            numeros[1] = 5;
+            numeros[2] = 18;
+            numeros[3] = 45;
+            numeros[4] = 90;
+
+            MessageBox.Show("Número: " + numeros[2]);
         }
     }
 }
