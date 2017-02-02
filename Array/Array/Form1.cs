@@ -21,7 +21,7 @@ namespace Array
         {
             //Criando e iniciando um simples array
             //Neste caso o tamanho do Array pode variar 
-            string[] times = {"Corinthians","Palmeiras","São Paulo", "Santos"};
+            string[] times = { "Corinthians", "Palmeiras", "São Paulo", "Santos" };
 
             //recuperando o conteúdo de um array
             MessageBox.Show("Time" + times[0]);
@@ -30,7 +30,7 @@ namespace Array
         private void btnCarta_Click(object sender, EventArgs e)
         {
             //Criando os naipes e tipos de cartas
-            string[] face = { "1","2","3","4","5","6","7","8","9","10","Valete","Dama","Rei"};
+            string[] face = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Valete", "Dama", "Rei" };
 
             string[] naipe = { "Ouros", "Paus", "Espadas", "Copas" };
 
@@ -45,14 +45,14 @@ namespace Array
             string f = face[numero.Next(13)];
 
             //Criando o Array aleatório de Números e Naipes de cartas
-            MessageBox.Show( f + " de " + n);
+            MessageBox.Show(f + " de " + n);
         }
 
         private void btnArray2_Click(object sender, EventArgs e)
         {
             //Outra forma de declarar e iniciar um Array 
             //Neste caso o Array SEMPRE tem um tamanho fixo
-            
+
             //"Criando um objeto Array do tipo inteiro de tamanho 5"
 
             int[] numeros = new int[5];
@@ -79,6 +79,27 @@ namespace Array
                 //listBox1.Items.Add(i);
                 listBox1.Items.Add("numeros [" + i + "] = " + i);
             }
+        }
+
+        private void btnArray4_Click(object sender, EventArgs e)
+        {
+            //Outra forma de iniciar um Array
+            //Uso do laço foi para exibir o conteúdo do Array
+            //Uso do .Length
+
+            int[] pares = new int[] { 2, 4, 6, 8 };
+
+            // .Length -- identifica o tamanho total do Array
+            for (int i = 0; i < pares.Length; i++)
+            {
+                listBox2.Items.Add(pares[i]);
+            }
+        }
+
+        private void btnArray5_Click(object sender, EventArgs e)
+        {
+            //Uso do foreach (laço for simplificado)
+            string semana = new string[];
         }
     }
 }
