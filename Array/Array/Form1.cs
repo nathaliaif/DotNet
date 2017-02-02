@@ -99,7 +99,21 @@ namespace Array
         private void btnArray5_Click(object sender, EventArgs e)
         {
             //Uso do foreach (laço for simplificado)
-            string semana = new string[];
+            string[] semana = new string[7];
+            semana[0] = "Segunda";
+            semana[1] = "Terça";
+            semana[2] = "Quarta";
+            semana[3] = "Quinta";
+            semana[4] = "Sexta";
+            semana[5] = "Sábado";
+            semana[6] = "Domingo";
+
+
+            //foreach (tipo de varávelnome (qualquer nome) in nome_Array)
+            foreach (string dia in semana)
+            {
+                listBox3.Items.Add(dia);
+            }
         }
     }
 }
