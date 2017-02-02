@@ -64,5 +64,21 @@ namespace Array
 
             MessageBox.Show("Número: " + numeros[2]);
         }
+
+        private void btnArray3_Click(object sender, EventArgs e)
+        {
+            //Preenchendo o Array com o laço for
+            int[] numeros = new int[5];
+
+            //A estrutura abaixo cria as variáveis que irão preencher as 5 "casinhas" do Array
+
+            //++ equivale a i=i+1
+            for (int i = 0; i < 5; i++)
+            {
+                numeros[i] = i;
+                //listBox1.Items.Add(i);
+                listBox1.Items.Add("numeros [" + i + "] = " + i);
+            }
+        }
     }
 }
