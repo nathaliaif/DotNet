@@ -30,15 +30,22 @@ namespace Array
         private void btnCarta_Click(object sender, EventArgs e)
         {
             //Criando os naipes e tipos de cartas
-            string[] numeros = { "1","2","3","4","5","6","7","8","9","10","Valete","Dama","Rei"};
+            string[] face = { "1","2","3","4","5","6","7","8","9","10","Valete","Dama","Rei"};
 
             string[] naipe = { "Ouros", "Paus", "Espadas", "Copas" };
 
-            //Função para gerar números aleatórios
-            Random snumeros = new Random(12);
-            Random snaipes = new Random(3);
+            //A linha abaixo ajuda no entendimento do raciocínio lógico
+            //MessageBox.Show("Carta Sorteada: " + numeros[10] + " de " + naipe[3]);
 
-            MessageBox.Show("Carta Sorteada: " + numeros[Convert.ToInt16(snumeros)] + " de " + naipe[Convert.ToInt16(snaipes)]);
+            Random numero = new Random();
+
+            //Função para gerar números aleatórios dos números e naipes
+            //Criando duas variáveis que vão receber números aleatórios
+            string n = naipe[numero.Next(3)];
+            string f = face[numero.Next(12)];
+
+            //Criando o Array aleatório de Números e Naipes de cartas
+            MessageBox.Show( f + " de " + n);
         }
     }
 }
