@@ -1,0 +1,9 @@
+D:\Aula 02-02\Array\Array\bin\Debug\Array.exe.config
+D:\Aula 02-02\Array\Array\bin\Debug\Array.exe
+D:\Aula 02-02\Array\Array\bin\Debug\Array.pdb
+D:\Aula 02-02\Array\Array\obj\Debug\Array.csprojResolveAssemblyReference.cache
+D:\Aula 02-02\Array\Array\obj\Debug\Array.Form1.resources
+D:\Aula 02-02\Array\Array\obj\Debug\Array.Properties.Resources.resources
+D:\Aula 02-02\Array\Array\obj\Debug\Array.csproj.GenerateResource.Cache
+D:\Aula 02-02\Array\Array\obj\Debug\Array.exe
+D:\Aula 02-02\Array\Array\obj\Debug\Array.pdb
